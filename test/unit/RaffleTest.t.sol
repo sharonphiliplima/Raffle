@@ -12,7 +12,7 @@ import {VRFCoordinatorV2Mock} from "@chainlink/contracts/src/v0.8/mocks/VRFCoord
 
 contract RaffleTest is Test {
     /** Events */
-    event EnteredRaffle(address indexed player); //manually write the events in tests.
+    event EnteredRaffle(address indexed player); //player is the emitter
 
     Raffle raffle;
     HelperConfig helperConfig;
